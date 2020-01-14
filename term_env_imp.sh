@@ -44,12 +44,12 @@ cp -rp ./python_scripts/* ~/Library/ApplicationSupport/iTerm2/Scripts/
 osascript -e 'tell application "iTerm" to activate'
 
 echo ""
-echo "---------------------------------------------------------------------------------------"
+echo "--------------------------------------------------------------------------------"
 echo "Before progress this installation..."
 echo "You have to make sure latest version, at least v3.3.x above, of iTerm2 is installed."
 echo "And you should check iTerm's 'Enable Python API' option is checked."
 echo "-- Preferences(Cmd+',') > General > Magic > 'Enable Python API'"
-echo "---------------------------------------------------------------------------------------"
+echo "--------------------------------------------------------------------------------"
 echo "When you make it clear, press ENTER."
 read
 
