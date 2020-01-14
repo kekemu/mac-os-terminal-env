@@ -18,7 +18,7 @@
 ### Usage
 - After git-cloning or download as a ZIP file
   ```
-  cd ${mac-os-terminal-env-dir} && ./sh_env_imp.sh
+  cd ${mac-os-terminal-env-dir} && ./term_env_imp.sh
   ```
 - Or Just C&P down below
   ```
@@ -28,7 +28,7 @@
   wget "https://github.com/kekemu/mac-os-terminal-env/archive/master.zip" &&\
   tar xzvf master.zip &&\
   cd mac-os-terminal-env-master &&\
-  ./sh_env_imp.sh &&\
+  ./term_env_imp.sh &&\
   cd "$PREV_WD" &&\
   rm -rf /tmp/term_set
   ```
