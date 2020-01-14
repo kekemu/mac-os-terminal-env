@@ -43,6 +43,17 @@ cp -rp ./python_scripts/* ~/Library/ApplicationSupport/iTerm2/Scripts/
 osascript -e 'tell application "iTerm" to activate'
 
 echo ""
+echo "---------------------------------------------------------------------------------------"
+echo "Before progress this installation..."
+echo "You have to make sure latest version, at least v3.3.7 above, of iTerm2 is installed."
+echo "And you should check iTerm's 'Enable Python API' option is checked."
+echo "-- Preferences(Cmd+',') > General > Magic > 'Enable Python API'"
+echo "---------------------------------------------------------------------------------------"
+echo "When you make it clear, press ENTER."
+read
+
+
+echo ""
 echo "Install 'Powerlevel9k' theme..."
 rm -rf ~/.oh-my-zsh/themes/powerlevel9k
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/themes/powerlevel9k
