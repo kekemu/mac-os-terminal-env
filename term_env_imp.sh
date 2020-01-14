@@ -27,7 +27,7 @@ if [ $? == 1 ]
 then
 	echo "iTerm is not installed."
 	brew --version > /dev/null 2>&1
-	if [ $? -e 1 ] 
+	if [ $? == 1 ] 
 	then
 		echo "Install Homebrew."
 		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -76,5 +76,8 @@ sleep 3
 osascript -e 'tell application "iTerm" to launch API script named "change_font_for_powerlevel9k.py"'
 
 echo "Done."
+
+osascript -e 'tell application "iTerm" to create window with default profile'
+
 exec zsh -l
 
