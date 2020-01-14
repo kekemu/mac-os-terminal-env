@@ -10,7 +10,7 @@
 
 ### Notice
 - It needs iTerm2 version at least v3.3.x above.
-- The whole process takes about three of four minutes.
+- The whole process takes about three of four minutes... or more. (It depends on your environments.)
   - At the end of setup process, it'll tries to execute `Python3` script that works on iTerm2 to change font and color preset.
   - It needs `Python3 runtime environment for iTerm2`, and iTerm will starts to download it.
   - After downloading, the python script will starts automatically. 
