@@ -34,6 +34,7 @@ then
 	fi
 	echo "Install iTerm."
 	brew cask install iTerm2
+	sleep 3
 	osascript -e 'tell application "iTerm" to activate'
 fi
 
