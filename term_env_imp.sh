@@ -22,7 +22,7 @@ else
 	echo "zsh & oh-my-zsh installation Done.!! "
 fi
 
-osascript -e 'tell application "iTerm" to activate'
+osascript -e 'tell application "iTerm" to activate' > /dev/null 2>&1
 if [ $? == 1 ]
 then
 	echo "iTerm is not installed."
