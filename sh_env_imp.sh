@@ -38,6 +38,7 @@ then
 fi
 
 # Add iTerm2 scripts
+mkdir -p ~/Library/ApplicationSupport/iTerm2/Scripts/
 cp -rp ./python_scripts/* ~/Library/ApplicationSupport/iTerm2/Scripts/
 osascript -e 'tell application "iTerm" to activate'
 
