@@ -22,7 +22,8 @@ else
 	echo "zsh & oh-my-zsh installation Done.!! "
 fi
 
-if [ $? -e 1 ]
+osascript -e 'tell application "iTerm" to activate'
+if [ $? == 1 ]
 then
 	echo "iTerm is not installed."
 	brew --version > /dev/null 2>&1
@@ -37,7 +38,7 @@ then
 fi
 
 # Add iTerm2 scripts
-cp -rp ./python_scripts./* ~/Library/ApplicationSupport/iTerm2/Scripts/
+cp -rp ./python_scripts/* ~/Library/ApplicationSupport/iTerm2/Scripts/
 osascript -e 'tell application "iTerm" to activate'
 
 echo ""
@@ -60,10 +61,7 @@ mkdir -p ~/.iterm && curl https://raw.githubusercontent.com/mbadolato/iTerm2-Col
 open ~/.iterm/Brogrammer.itermcolors
 sleep 3
 
-osascript tell application "iTerm2" <<EOF
-	launch API script named "change_font_for_powerlevel9k"
-end tell
-EOF
+osascript -e 'tell application "iTerm" to launch API script named "change_font_for_powerlevel9k.py"'
 
 echo "Done."
 exec zsh -l
