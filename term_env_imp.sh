@@ -79,5 +79,4 @@ echo "Done."
 
 osascript -e 'tell application "iTerm" to create window with default profile'
 
-exec zsh -l
 
